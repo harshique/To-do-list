@@ -132,7 +132,7 @@ div#log-in {
     width: 40%;
     border-radius: 5px;
     border: 0px solid midnightblue;
-    box-shadow: box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 h2 {
     font-size: 2rem;
