@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    position: relative;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    border: 4px solid rgb(72, 3, 59);
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    padding: 0px 40px 60px 40px;
+    
+}
+.todo h2{
+    color: rgb(3, 109, 67);
+}
+img{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.heading{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    position: realative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    /* padding: 10px; */
+    margin-top: 20px;
+    border-radius: 30px;
+    margin: 20px auto;
+    border: 2px solid brown;
+}
+input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+button{
+    width: 25%;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    background-color: orangered;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+ul li{
+    list-style: none;
+    padding: 12px 16px 10px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    /* border-radius: 50%; */
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 48px;
+}
+ul li.checked{
+    color: rgb(126, 137, 147);
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 40px;
+    height: 25px;
+    width: 25px;
+    background-color:#edeef0;
+    border-radius: 50%; 
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+
+#reset{
+    position: absolute;
+    right: 154px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
