@@ -57,7 +57,7 @@ input{
     background-color: transparent;
     margin-left: 10px;
 }
-button{
+button.todo-btn{
     width: 25%;
     padding: 15px 30px;
     outline: none;
@@ -129,14 +129,18 @@ div#log-in {
     height: 300px;
     height: none;
     background: #edeef0db;
-    width: 50%;
+    width: 40%;
     border-radius: 5px;
     border: 0px solid midnightblue;
     box-shadow: box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 h2 {
+    font-size: 2rem;
+    color: blueviolet;
     text-align: center;
+    margin-top: 1rem;
 }
+
 .input-container {
     /* text-align: left; */
     align-items: left;
@@ -150,9 +154,51 @@ h2 {
     align-content: center;
     /* flex-wrap: wrap; */
 }
+.field-container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.field {
+    padding: 1rem;
+    /* border: 1px solid; */
+    margin-bottom: 1rem;
+}
+input#field-1 {
+    /* color: white; */
+    /* border-radius: 10%; */
+    text-align: center;
+    height: 25px;
+    background: gainsboro;
+    outline: thin;
+    border: 1px solid red;
+}
+input#field-2 {
+    /* color: white; */
+    /* border-radius: 10%; */
+    text-align: center;
+    height: 25px;
+    background: gainsboro;
+    outline: thin;
+    border: 1px solid red;
+}
 
-
-
+button.login-btn {
+    opacity: .7;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: cornflowerblue;
+    height: 2rem;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+button.login-btn:hover {
+    opacity: 1;
+    background: burlywood;
+}
 
 
 
