@@ -9,6 +9,8 @@
     height: 100vh;
     background-color: blueviolet;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .todo{
     width: 100%;
@@ -111,7 +113,43 @@ ul li span{
     right: 154px;
 }
 
-
+.login-container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: bisque;
+}
+div#log-in {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 10px 6px 15px 15px; */
+    height: 300px;
+    height: none;
+    background: #edeef0db;
+    width: 50%;
+    border-radius: 5px;
+    border: 0px solid midnightblue;
+    box-shadow: box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h2 {
+    text-align: center;
+}
+.input-container {
+    /* text-align: left; */
+    align-items: left;
+    top: 25%;
+    left: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+}
 
 
 
