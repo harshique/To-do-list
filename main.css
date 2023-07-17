@@ -199,10 +199,25 @@ button.login-btn:hover {
     opacity: 1;
     background: burlywood;
 }
+span#registration {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 18px;
+}
 
-
-
-
+img#swiper-img {
+    border-radius: 0;
+    height: 300px;
+    width: 100%;
+}
+.swiper{
+    top: 4%;
+    position: absolute!important;
+}
+.hide{
+    display: none;
+}
 
 
 

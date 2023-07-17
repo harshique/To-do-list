@@ -59,3 +59,10 @@ resetList.addEventListener("keypress",function(e){
     document.getElementById("reset").click();
     }
 })
+
+const field = document.getElementById("field-1")
+const fieldName = document.getElementById("field-2")
+function storeInfo(){
+localStorage.setItem("email",field.value)
+localStorage.setItem("name",fieldName.value)
+}

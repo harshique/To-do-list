@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do list </title>
     <link rel="stylesheet" href="/main.css">
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="login-container">
      <div class="login-card" id="log-in">
-        <h2>login Form</h2>
+        <h2>Let me know you</h2>
 
        <div class="field-container">
             <div class="field">
             <span>Email:</span>
-            <input id="field-1" type= "email" placeholder= "enter your email" >
+            <input id="field-1" type= "email" placeholder= "enter your email" required>
             </div>
             <div class="field">
-            <span>Password:</span>
-            <input id="field-2" type="password" placeholder="confirm password"> 
+            <span>Name:</span>
+            <input id="field-2" type="text" placeholder="enter your name" aria-required="true"> 
             </div>
-            <button class="login-btn">Login Now</button>
-            <span>Dont't have an account? <a>Sign up</a></span>    
+            <button class="login-btn" onclick="storeInfo()">Show Todo</button>
+            <!-- <span id="registration">Dont't have an account? <a href="/registration.html">Sign up</a></span>     -->
             
         </div>
 
@@ -30,7 +32,7 @@
 
 
 
-    <div id="harsh" class="container">
+    <div id="harsh" class="container hide">
         <div class="todo">
             <h2 class="heading">To Do List<img src="https://img.freepik.com/premium-vector/document-3d-icon-todo-list-clipboard-with-pen-3d-realistic-design-element_363543-573.jpg?w=2000" alt=""></h2>
             <div class="row">
@@ -48,6 +50,14 @@
     </div>
 
     <script src="/main.js"></script>
+    <script>
+        $(".login-btn").click(
+    function(){
+        $(".login-container").hide();
+        $(".container").show();
+    });
+    </script>
+    
 </body>
 </html>
 
