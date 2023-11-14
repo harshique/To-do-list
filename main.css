@@ -93,7 +93,7 @@ ul li.checked::before{
     background-image: url(/images/checked.png);
 }
 
-ul li span{
+ul li span.crossBtn{
     position: absolute;
     right: 40px;
     height: 25px;
@@ -111,6 +111,7 @@ ul li span{
     right: 154px;
 }
 
+<<<<<<< Updated upstream
 
 
 
@@ -120,8 +121,338 @@ ul li span{
 
 
 
+=======
+.login-container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+}
+div#log-in {
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 10px 6px 15px 15px; */
+    height: 300px;
+    /* height: none; */
+    background: #edeef000;
+    width: 40%;
+    border-radius: 5px;
+    border: 0px solid midnightblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.input-container {
+    /* text-align: left; */
+    align-items: left;
+    top: 25%;
+    left: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+}
+.field-container {
+    /* position: absolute; */
+    top: 25%;
+    left: 25%;
+}
+.field {
+    color: white;
+    padding: 1rem;
+    /* border: 1px solid; */
+    margin-bottom: 1rem;
+}
+input#field-1 {
+    /* color: white; */
+    /* border-radius: 10%; */
+    text-align: center;
+    height: 25px;
+    background: gainsboro;
+    outline: thin;
+    border: 1px solid red;
+}
+input#field-2 {
+    /* color: white; */
+    /* border-radius: 10%; */
+    text-align: center;
+    height: 25px;
+    background: gainsboro;
+    outline: thin;
+    border: 1px solid red;
+}
+
+button.login-btn {
+    opacity: .8;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: lightgrey;
+    height: 2rem;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+button.login-btn:hover {
+    opacity: 1;
+    background: white;
+}
+span#registration {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+img#swiper-img {
+    border-radius: 0;
+    height: 300px;
+    width: 100%;
+}
+.swiper{
+    top: 4%;
+    position: absolute!important;
+}
+.hide{
+    display: none;
+}
+@media (max-width:767px){
+    div#log-in{
+        width: 85%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .field-container{
+        top:21%;
+        left: 7%;
+    }
+    .todo{
+        width: 86%;
+        padding: 0px 10px 25px 10px;
+        left:0;
+        border: 2px solid rgb(72, 3, 59);
+        top: 15%;
+         margin-left: 1.5rem;
+    }
+    button#reset{
+            /* font-size: 20px; */
+            /* text-align: center; */
+            position: absolute;
+            right: 86px;
+        }
+        ul li{
+            padding: 13px 5px 10px 19px;
+    font-size: 1rem;
+        }
+        button.todo-btn{
+            padding: 10px 20px;
+        }
+        ul li::before{
+            height: 20px;
+    width: 20px;
+    left: 6px;
+        }
+        ul li span{
+            right: 20px;
+    height: 21px;
+    width: 20px;
+    font-size: 17px;
+        }
+    }
+  
+>>>>>>> Stashed changes
+
+    button.editbutton {
+        margin-left: 1rem;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        padding: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+input.editinput{
+
+    font-weight: 800;
+    width: 90%;
+    padding: 1rem;
+    height: 58px;
+    background-color: black;
+    margin: 0;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
 
 
+.editpopup {
+    width: 50%;
+    height: 200px;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 1rem;
+}
+.popupWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #2925258a;
+    z-index: 9999;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+input.editinput {
+    font-weight: 600;
+    width: 90%;
+    padding: 1rem;
+    height: 75px;
+    background-color: black;
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 27px;
+    border: 2px solid black;
+    border-radius: 30px;
+    line-height: 42px;
+}
+.popupWrapper.open{
+    display: flex;
+}
+.popupWrapper.must{
+    display: flex!important;
+}
+.popupWrapper.open.must.doublemust{
+    display: none!important;
+}
+.btnwrap {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+button.commonBtn {
+    width: 49%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 16%;
+    background: darkgrey;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}  
 
 
+.login-card::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25%;
+    background:linear-gradient(rgb(61, 5, 113),red);
+    animation: move .2s infinite;
+   transition: ease-out;
 
+}
+.login-card::before{
+    content: '';
+    position: absolute;
+    height: 25%;
+    width: 3px;
+    right: 0;
+    background:linear-gradient(rgb(61, 5, 113),red);
+    animation: moveBelow 0.2s infinite;
+   transition: ease-out;
+   
+}
+.field-container::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 3px;
+    background: linear-gradient(red,rgb(61, 5, 113));
+    animation: moveAbove 0.2s infinite;
+    transition: ease-out;
+}
+.field-container::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 25%;
+    background: linear-gradient(red,rgb(61, 5, 113));
+    animation: moveRight 0.2s infinite;
+    transition: ease-in;
+}
+@keyframes  move {
+    0%{
+        height: 2px;
+        width: 25%;
+        left:0;
+        top:0;
+    }
+   100%{
+    left:75%;
+    top:0;
+   }
+}
+@keyframes  moveBelow {
+    0%{
+        right:0;
+        top:0;
+    }
+   100%{
+     right:0;
+    top:75%;
+   }
+}
+@keyframes  moveAbove {
+    0%{
+        left:0;
+        bottom:0;
+    }
+   100%{
+     left:0;
+    bottom:75%;
+   }
+}
+@keyframes  moveRight {
+    0%{
+        right:0;
+        bottom:0;
+    }
+   100%{
+     right:75%;
+    bottom:0;
+   }
+}
