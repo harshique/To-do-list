@@ -95,7 +95,7 @@ ul li.checked::before{
     background-image: url(/images/checked.png);
 }
 
-ul li span{
+ul li span.crossBtn{
     position: absolute;
     right: 40px;
     height: 25px;
@@ -123,16 +123,20 @@ ul li span{
     background-image: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
 }
 div#log-in {
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     /* box-shadow: rgba(0, 0, 0, 0.35) 10px 6px 15px 15px; */
     height: 300px;
-    height: none;
+    /* height: none; */
     background: #edeef000;
     width: 40%;
     border-radius: 5px;
     border: 0px solid midnightblue;
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 h2 {
     font-size: 2rem;
@@ -155,7 +159,7 @@ h2 {
     /* flex-wrap: wrap; */
 }
 .field-container {
-    position: absolute;
+    /* position: absolute; */
     top: 25%;
     left: 25%;
 }
@@ -265,7 +269,180 @@ img#swiper-img {
     }
   
 
+    button.editbutton {
+        margin-left: 1rem;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        padding: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+input.editinput{
+
+    font-weight: 800;
+    width: 90%;
+    padding: 1rem;
+    height: 58px;
+    background-color: black;
+    margin: 0;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
 
 
+.editpopup {
+    width: 50%;
+    height: 200px;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 1rem;
+}
+.popupWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #2925258a;
+    z-index: 9999;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+input.editinput {
+    font-weight: 600;
+    width: 90%;
+    padding: 1rem;
+    height: 75px;
+    background-color: black;
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 27px;
+    border: 2px solid black;
+    border-radius: 30px;
+    line-height: 42px;
+}
+.popupWrapper.open{
+    display: flex;
+}
+.popupWrapper.must{
+    display: flex!important;
+}
+.popupWrapper.open.must.doublemust{
+    display: none!important;
+}
+.btnwrap {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+button.commonBtn {
+    width: 49%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 16%;
+    background: darkgrey;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}  
 
 
+.login-card::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25%;
+    background:linear-gradient(rgb(61, 5, 113),red);
+    animation: move .2s infinite;
+   transition: ease-out;
+
+}
+.login-card::before{
+    content: '';
+    position: absolute;
+    height: 25%;
+    width: 3px;
+    right: 0;
+    background:linear-gradient(rgb(61, 5, 113),red);
+    animation: moveBelow 0.2s infinite;
+   transition: ease-out;
+   
+}
+.field-container::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 3px;
+    background: linear-gradient(red,rgb(61, 5, 113));
+    animation: moveAbove 0.2s infinite;
+    transition: ease-out;
+}
+.field-container::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 25%;
+    background: linear-gradient(red,rgb(61, 5, 113));
+    animation: moveRight 0.2s infinite;
+    transition: ease-in;
+}
+@keyframes  move {
+    0%{
+        height: 2px;
+        width: 25%;
+        left:0;
+        top:0;
+    }
+   100%{
+    left:75%;
+    top:0;
+   }
+}
+@keyframes  moveBelow {
+    0%{
+        right:0;
+        top:0;
+    }
+   100%{
+     right:0;
+    top:75%;
+   }
+}
+@keyframes  moveAbove {
+    0%{
+        left:0;
+        bottom:0;
+    }
+   100%{
+     left:0;
+    bottom:75%;
+   }
+}
+@keyframes  moveRight {
+    0%{
+        right:0;
+        bottom:0;
+    }
+   100%{
+     right:75%;
+    bottom:0;
+   }
+}
