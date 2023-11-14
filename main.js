@@ -92,9 +92,6 @@ resetList.addEventListener("keypress",function(e){
     e.preventDefault();
     document.getElementById("reset").click();
     }
-<<<<<<< Updated upstream
-})
-=======
     saveData();
 })
 
@@ -192,4 +189,3 @@ a.forEach((item)=>{
 })
 })
 
->>>>>>> Stashed changes
